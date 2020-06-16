@@ -1,0 +1,244 @@
+#main-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#left {
+    display: inline-block;
+    float: left;
+    width: 220px;
+    height: 100%;
+    background-color: rgb(77, 57, 75);
+    color: rgb(171, 155, 169);
+}
+
+#roomsList {
+    padding-left: 30px;
+    overflow: auto;
+    height: 75%;
+}
+
+#roomsList > li {
+    overflow-wrap: break-word;
+}
+
+.current-room {
+    font-weight: bold;
+    color: rgb(234, 235, 255);
+    text-decoration: underline;
+}
+
+/*#newRoom - это форма*/
+#newRoom {
+    padding-left: 8px;
+}
+
+#newRoom > input {
+    padding-left: 5px;
+    width: 145px;
+}
+
+#newRoom > button[type="submit"]:hover {
+    background-color: #47a447;
+    border-color: #398439;
+}
+#newRoom > button.dismiss:hover {
+    background-color: #d2322d;
+    border-color: #ac2925;
+}
+
+/*кнопка, показывающая форму*/
+#addRoom {
+    color: #FCFEFF;
+    background-color: #938A8A;
+    border-color: #66421E;
+    position: absolute;
+    left: 40px;
+    bottom: 10px;
+}
+@media(max-height: 517px){
+    #addRoom {
+        position: relative;
+    }
+}
+
+#logo {
+    height: 10%;
+    background: url("/img/logo.jpg");
+    background-size: cover;
+    background-position-y: -30px;
+}
+
+#logo > a {
+    display: block;
+    height: 100%;
+}
+
+#chats {
+    height: 75%;
+    border-bottom: 3px solid black;
+    position: relative;
+}
+
+#center {
+    display:block;
+    width: auto;
+    height: 100%;
+    background-color: #FFFFFF;
+    color: #212121;
+    overflow-y: auto;
+}
+
+#center > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#top {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#messages {
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    height: 85%;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+.msg {
+    width: 100%;
+}
+
+#message-input {
+    height: 15%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#input {
+    resize: none;
+    height: 100%;
+    margin-left: 10px;
+}
+
+#right {
+    display: inline-block;
+    float: right;
+    width: 300px;
+    height: 100%;
+    background-color: #f8f8ff;
+    padding-left: 15px;
+}
+
+#right-header {
+    height: 30px;
+    border-bottom: 1px solid black;
+    margin-right: 10px;
+}
+
+#right-content {
+    height: 100%;
+    overflow: auto;
+}
+
+.smile-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: url('/img/im_smile_cross.png') 0 -24px no-repeat;
+}
+
+.hoverable:hover {
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#room-controls > .btn {
+    height: 40px;
+    width: 130px;
+    margin-right: 10px;
+    margin-top: 10px;
+    white-space: normal;
+    background-color: #938A8A;
+    border-color: #66421E;
+}
+
+#room-controls > .btn:last-child {
+    line-height: 36px;
+}
+
+#room-controls > .btn-success:hover, #addRoom:hover {
+    background-color: #47a447;
+    border-color: #398439;
+}
+
+#room-controls > .btn-danger:hover {
+    background-color: #d2322d;
+    border-color: #ac2925;
+}
+
+#members-list {
+    padding-top: 10px;
+}
+
+#members-list > span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#members-list .hoverable:hover {
+    color: #716d6d;
+}
+
+.myMsg {
+    font-weight: bold;
+}
+
+.help-block {
+    color: #cb7661;
+}
+
+#invitedUsers {
+    width: 350px;
+}
+
+.glyphicon-comment {
+    margin-left: 3px;
+    color: rgb(255, 174, 0)
+}
+
+#menu {
+    float: right;
+}
+
+.up { bottom:100% !important; top:auto !important; }
+
+#dropdownMenu2 {
+    padding: 2px 6px;
+}
+
+#historyButton {
+     cursor: pointer;
+ }
+
+#historyModal table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+#historyModal table tr > th:first-child {
+    width: 100px;
+}
+
+#login {
+    margin-left: 63px;
+    float: left;
+    margin-top: 3px;
+    font-size: 1.2em;
+    color: rgb(236, 237, 237);
+}
